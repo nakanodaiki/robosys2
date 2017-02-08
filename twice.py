@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 
 #Copyright (c) 2017 Daiki Nakano
 
@@ -12,7 +13,6 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-#!/usr/bin/env python
 import rospy
 from std_msgs.msg import Int32
 
@@ -29,4 +29,4 @@ if  __name__ == '__main__':
 	rate = rospy.Rate(10)
 	while not rospy.is_shutdown():
 		pub.publish(n)
-		rate.sleep(2)
+		rate.sleep()
